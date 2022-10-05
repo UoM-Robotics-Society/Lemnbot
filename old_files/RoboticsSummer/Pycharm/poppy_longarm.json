@@ -1,0 +1,166 @@
+{
+  "controllers": {
+    "upper_body_controller": {
+      "sync_read": false,
+      "attached_motors": [
+        "r_arm",
+        "l_arm"
+      ],
+      "port": "/dev/ttyACM0"
+    },
+    "my_dxl_controller": {
+      "sync_read": true,
+	  "protocol":2,
+      "attached_motors": [
+        "r_gripper"
+      ],
+      "port": "/dev/ttyACM1"
+    }
+  },
+  "motorgroups": {
+    "r_arm": [
+      "r_shoulder_y",
+      "r_shoulder_x",
+      "r_arm_z",
+      "r_elbow_y"
+    ],
+    "l_arm": [
+      "l_shoulder_y",
+      "l_shoulder_x",
+      "l_arm_z",
+      "l_elbow_y"
+    ],
+    "r_gripper": [
+      "r_m1",
+      "r_m2",
+      "r_m3",
+      "r_m4"
+    ]
+  },
+  "motors": {
+    "r_shoulder_y": {
+      "offset": 90,
+      "type": "MX-28",
+      "id": 51,
+      "angle_limit": [
+        -155,
+        120
+      ],
+      "orientation": "indirect"
+    },
+    "r_arm_z": {
+      "offset": 0.0,
+      "type": "MX-28",
+      "id": 53,
+      "angle_limit": [
+        -120,
+        120
+      ],
+      "orientation": "indirect"
+    },
+    "r_shoulder_x": {
+      "offset": 90.0,
+      "type": "MX-28",
+      "id": 52,
+      "angle_limit": [
+        -110,
+        105
+      ],
+      "orientation": "indirect"
+    },
+    "r_elbow_y": {
+      "offset": 0.0,
+      "type": "MX-28",
+      "id": 54,
+      "angle_limit": [
+        -1,
+        175
+      ],
+      "orientation": "indirect"
+    },
+    "r_m1": {
+      "offset": 41.0,
+      "type": "XL-320",
+      "id": 55,
+      "angle_limit": [
+        -90.0,
+        90.0
+      ],
+      "broken": false,
+      "orientation": "direct"
+    },
+    "r_m2": {
+      "offset": 5.13,
+      "type": "XL-320",
+      "id": 56,
+      "angle_limit": [
+        -180.0,
+        180.0
+      ],
+      "broken": false,
+      "orientation": "direct"
+    },
+    "r_m3": {
+      "offset": -50.0,
+      "type": "XL-320",
+      "id": 57,
+      "angle_limit": [
+        -135.0,
+        40.0
+      ],
+      "broken": false,
+      "orientation": "direct"
+    },
+    "r_m4": {
+      "offset": 0.0,
+      "type": "XL-320",
+      "id": 58,
+      "angle_limit": [
+        -90.0,
+        90.0
+      ],
+      "broken": false,
+      "orientation": "direct"
+    },
+    "l_shoulder_x": {
+      "offset": -90.0,
+      "type": "MX-28",
+      "id": 42,
+      "angle_limit": [
+        -105,
+        110
+      ],
+      "orientation": "indirect"
+    },
+    "l_shoulder_y": {
+      "offset": 90,
+      "type": "MX-28",
+      "id": 41,
+      "angle_limit": [
+        -120,
+        155
+      ],
+      "orientation": "direct"
+    },
+    "l_arm_z": {
+      "offset": 0.0,
+      "type": "MX-28",
+      "id": 43,
+      "angle_limit": [
+        -105,
+        105
+      ],
+      "orientation": "indirect"
+    },
+    "l_elbow_y": {
+      "offset": 0.0,
+      "type": "MX-28",
+      "id": 44,
+      "angle_limit": [
+        -180,
+        1
+      ],
+      "orientation": "direct"
+    }
+  }
+}

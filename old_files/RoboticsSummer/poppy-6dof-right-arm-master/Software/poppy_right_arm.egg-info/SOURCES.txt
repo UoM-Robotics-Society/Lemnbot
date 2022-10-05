@@ -1,0 +1,13 @@
+MANIFEST.in
+README
+setup.py
+poppy_right_arm/__init__.py
+poppy_right_arm/_version.py
+poppy_right_arm/poppy_right_arm.py
+poppy_right_arm.egg-info/PKG-INFO
+poppy_right_arm.egg-info/SOURCES.txt
+poppy_right_arm.egg-info/dependency_links.txt
+poppy_right_arm.egg-info/not-zip-safe
+poppy_right_arm.egg-info/requires.txt
+poppy_right_arm.egg-info/top_level.txt
+poppy_right_arm/configuration/poppy_right_arm.json
